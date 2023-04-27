@@ -20,4 +20,4 @@
   - 4/26 SVC to reach 0.3852.
   - 4/27 Autogluon to reach 0.34657. Not a good one, but by using the Catboost which seems to be recognized as the best model (with WeightedEnsemble_L2) from training procedure, the prediction probability has never changed in testing data! (So I just use WeightedEnsemble_L2)
   - 4/27 Model_Ensembling of SVC and Bernoulli bayes function. 0.39183 
-  - 4/27 GridSearchCV of Bernoulli bayes (Since Bernoulli is good at dealing with discrete data) function. 0.39955
+  - 4/27 GridSearchCV of Bernoulli bayes (Since Bernoulli is good at dealing with the discrete data) function. 0.39955
