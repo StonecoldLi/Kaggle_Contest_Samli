@@ -25,7 +25,7 @@
   - 4/29 Do some feature Engineering (combined several columns) to reach the scores of 0.40286. 【I've tried votingclassifier to ensemble model, while it did improve the accuracy score when doing cross_validation_test on training data, the submission score of this function did not reach 0.4 somehow】
   
 ### 04 Classify leaves
-  - All the progress of this task is based on Google Colab
+  - All the progress of this task is based on Google Colab (without changing the existed tuning params of each pretained-Net)
   - 4/28 train resnet34_pretrained model and did not tune the params except the Linear layer ----> 0.79022
   - 4/28 train densenet_pretrained model ----> 0.77977
   - 4/29 train vgg_11_pretrained model ----> 0.71931
