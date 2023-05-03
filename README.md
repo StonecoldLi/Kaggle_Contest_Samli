@@ -35,4 +35,4 @@
   - 5/1 Try Autogluon to set the baseline of AutoML ----> As a regression problem, MAE score:358.21564 【autogluon_ver1.0.ipynb】; As a multiclass(Classification) problem, since the target predicting column (yield) only have 776 different values compared with totally 15289 rows of data, MAE score: 416.21691【autogluon_ver1.1.ipynb】
   - 5/3 Try Model Ensembing gradient_bosting_regressor and hist_gradient_bosting_regressor, MAE score: 353.13531. Finally beat the provided baseline of this contest.【Model_selection.ipynb】
   - 5/3 Try Model Ensembing with catBoostRegressor (without high-correlated feature deletion) and Lgbm(with high-correlated feature deletion), MAE score: 342.83692. 【Catboost_lgb.ipynb】(If we simply use votingregressor provided by sklearn and do not delete any features , we would get a MAE score of 342.92801)
-  
+   - 5/3 Try Model Ensembing with catBoostRegressor (without high-correlated feature deletion) ,Lgbm(with high-correlated feature deletion) and HistGradientBoostingRegressor, MAE score: 341.84440. 【Catboost_lgb_hgbr.ipynb】
