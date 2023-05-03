@@ -25,7 +25,14 @@
   - 4/29 Do some feature Engineering (combined several columns) to reach the scores of 0.40286. 【I've tried votingclassifier to ensemble model, while it did improve the accuracy score when doing cross_validation_test on training data, the submission score of this function did not reach 0.4 somehow】
   
 ### 04 Classify leaves
-  - All the progress of this task is based on Google Colab (without changing the existed tuning params of each pretained-Net)
+  - All the progress of this task is based on Google Colab (without changing the existed tuned-params of each pretained-Net)
   - 4/28 train resnet34_pretrained model and did not tune the params except the Linear layer ----> 0.79022
   - 4/28 train densenet_pretrained model ----> 0.77977
   - 4/29 train vgg_11_pretrained model ----> 0.71931
+  
+### 05 Prediction of Wild Blueberry Yield (MAE score, which is lower the better)
+  - 5/1 EDA.ipynb (Exploratory Data Analysis) gives a quick glance of the data correlation. Like which columns are highly correlated by using .corr()
+  - 5/1 Try Autogluon to set the baseline of AutoML ----> As a regression problem, MAE score:358.21564 【autogluon_ver1.0.ipynb】; As a multiclass(Classification) problem, since the target predicting column (yield) only have 776 different values compared with totally 15289 rows of data, MAE score: 416.21691【autogluon_ver1.1.ipynb】
+  - 5/3 Try Model Ensembing gradient_bosting_regressor and hist_gradient_bosting_regressor, MAE score: 353.13531. Finally beat the provided baseline of this contest.【Model_selection.ipynb】
+  - 5/3 Try Model Ensembing with catBoostRegressor (without high-correlated feature deletion) and Lgbm(with high-correlated feature deletion), MAE score: 342.83692. 【Catboost_lgb】(If we simply use votingregressor provided by sklearn and do not delete any features , we would get a MAE score of 342.92801)
+  
