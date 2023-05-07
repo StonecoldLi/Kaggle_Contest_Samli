@@ -36,3 +36,5 @@
   - 5/3 Try Model Ensembing gradient_bosting_regressor and hist_gradient_bosting_regressor, MAE score: 353.13531. Finally beat the provided baseline of this contest.【Model_selection.ipynb】
   - 5/3 Try Model Ensembing with catBoostRegressor (without high-correlated feature deletion) and Lgbm(with high-correlated feature deletion), MAE score: 342.83692. 【Catboost_lgb.ipynb】(If we simply use votingregressor provided by sklearn and do not delete any features , we would get a MAE score of 342.92801)
    - 5/3 Try Model Ensembing with catBoostRegressor (without high-correlated feature deletion) ,Lgbm(with high-correlated feature deletion) and HistGradientBoostingRegressor, MAE score: 341.84440. 【Catboost_lgb_hgbr.ipynb】
+   - 5/6 Try tuning the params of lgbm and get a Mae score of 341.48407.【Catboost_lgb_hgbr_tuning_params.ipynb】
+   - 5/7 Try a little trick during predicting the results and get 341.32303.【Catboost_lgb_hgbr_tuning_params_tricks.ipynb】
