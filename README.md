@@ -23,14 +23,15 @@
   - 4/27 GridSearchCV of Bernoulli bayes (Since Bernoulli is good at dealing with the discrete data) function. 0.39955
   - 4/28 GridSearchCV(2.0) of Bernoulli bayes ----> 0.40176
   - 4/29 Do some feature Engineering (combined several columns) to reach the scores of 0.40286. 【I've tried votingclassifier to ensemble model, while it did improve the accuracy score when doing cross_validation_test on training data, the submission score of this function did not reach 0.4 somehow】
-  
+#### Private Ranking: 353/934
+
 ### 04 Classify leaves
   - All the progress of this task is based on Google Colab (without changing the existed tuned-params of each pretained-Net)
   - 4/28 train resnet34_pretrained model and did not tune the params except the Linear layer ----> 0.79022
   - 4/28 train densenet_pretrained model ----> 0.77977
   - 4/29 train vgg_11_pretrained model ----> 0.71931
   
-### 05 Prediction of Wild Blueberry Yield (MAE score, which is lower the better)
+### 05 Prediction of Wild Blueberry Yield (MAE score, which is the lower the better)
   - 5/1 EDA.ipynb (Exploratory Data Analysis) gives a quick glance of the data correlation. Like which columns are highly correlated by using .corr()
   - 5/1 Try Autogluon to set the baseline of AutoML ----> As a regression problem, MAE score:358.21564 【autogluon_ver1.0.ipynb】; As a multiclass(Classification) problem, since the target predicting column (yield) only have 776 different values compared with totally 15289 rows of data, MAE score: 416.21691【autogluon_ver1.1.ipynb】
   - 5/3 Try Model Ensembing gradient_bosting_regressor and hist_gradient_bosting_regressor, MAE score: 353.13531. Finally beat the provided baseline of this contest.【Model_selection.ipynb】
@@ -38,3 +39,9 @@
    - 5/3 Try Model Ensembing with catBoostRegressor (without high-correlated feature deletion) ,Lgbm(with high-correlated feature deletion) and HistGradientBoostingRegressor, MAE score: 341.84440. 【Catboost_lgb_hgbr.ipynb】
    - 5/6 Try tuning the params of lgbm and get a Mae score of 341.48407.【Catboost_lgb_hgbr_tuning_params.ipynb】
    - 5/7 Try a little trick during predicting the results and get 341.32303.【Catboost_lgb_hgbr_tuning_params_tricks.ipynb】
+#### Private Ranking: 411/1875
+
+### 05 Prediction of Wild Blueberry Yield (RMSE score, lower the better)
+  - 5/16 Created the Baseline by using RandomForestRegressor 【RMSE: 0.083981】
+  - 5/18 Created the VotingRegressor with the extra data and imputed the missing values by using SimpleImputer (startegy='median') with 5 Regressor Models (GradientBoostingRegressor, HistGradientBoostingRegressor, Catboost, LGBM, XGB) 【RMSE: 0.076014】
+  - 5/20 Created the VotingRegressor with the extra data but care nothing on NaNs. Since that, we need Regressor Models which can handling the missing values by themselves to do the VotingRegressor. (https://www.kaggle.com/competitions/playground-series-s3e15/discussion/411353) 【RMSE: 0.075537】
