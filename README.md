@@ -23,7 +23,7 @@
   - 4/27 GridSearchCV of Bernoulli bayes (Since Bernoulli is good at dealing with the discrete data) function. 0.39955
   - 4/28 GridSearchCV(2.0) of Bernoulli bayes ----> 0.40176
   - 4/29 Do some feature Engineering (combined several columns) to reach the scores of 0.40286. 【I've tried votingclassifier to ensemble model, while it did improve the accuracy score when doing cross_validation_test on training data, the submission score of this function did not reach 0.4 somehow】
-#### Private Ranking: 353/934
+  #### Private Ranking: 353/934
 
 ### 04 Classify leaves
   - All the progress of this task is based on Google Colab (without changing the existed tuned-params of each pretained-Net)
@@ -39,7 +39,7 @@
    - 5/3 Try Model Ensembing with catBoostRegressor (without high-correlated feature deletion) ,Lgbm(with high-correlated feature deletion) and HistGradientBoostingRegressor, MAE score: 341.84440. 【Catboost_lgb_hgbr.ipynb】
    - 5/6 Try tuning the params of lgbm and get a Mae score of 341.48407.【Catboost_lgb_hgbr_tuning_params.ipynb】
    - 5/7 Try a little trick during predicting the results and get 341.32303.【Catboost_lgb_hgbr_tuning_params_tricks.ipynb】
-#### Private Ranking: 411/1875
+  #### Private Ranking: 411/1875
 
 ### 05 Prediction of Wild Blueberry Yield (RMSE score, lower the better)
   - 5/16 Created the Baseline by using RandomForestRegressor 【RMSE: 0.083981】
