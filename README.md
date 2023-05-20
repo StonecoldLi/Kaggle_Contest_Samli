@@ -44,4 +44,4 @@
 ### 05 Prediction of Wild Blueberry Yield (RMSE score, lower the better)
   - 5/16 Created the Baseline by using RandomForestRegressor 【RMSE: 0.083981】
   - 5/18 Created the VotingRegressor with the extra data and imputed the missing values by using SimpleImputer (startegy='median') with 5 Regressor Models (GradientBoostingRegressor, HistGradientBoostingRegressor, Catboost, LGBM, XGB) 【RMSE: 0.076014】
-  - 5/20 Created the VotingRegressor with the extra data but care nothing on NaNs. Since that, we need Regressor Models which can handling the missing values by themselves to do the VotingRegressor. (https://www.kaggle.com/competitions/playground-series-s3e15/discussion/411353) 【RMSE: 0.075537】
+  - 5/20 Created the VotingRegressor with the extra data but care nothing on NaNs. Since that, we need Regressor Models which can handling the missing values by themselves to do the VotingRegressor. (More to see: https://www.kaggle.com/competitions/playground-series-s3e15/discussion/411353) 【RMSE: 0.075537】
