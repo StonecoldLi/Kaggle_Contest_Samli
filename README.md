@@ -50,4 +50,4 @@
 
 ### 07 Natural Language Processing with Disaster Tweets
   - 5/10 Use CountVectorizer & BernoulliBayes to get a point of 0.79436
-  - 5/22 Use pretrained BERT (ver2:cased;ver3:uncased) to get 0.81979(highest one) and 0.81673 (for ver3) code reference:emeng.tw/attack_on_bert_transfer_learning_in_nlp.html
+  - 5/22 Use pretrained BERT (ver2:cased;ver3:uncased) to get 0.81979(highest one) and 0.81673 (for ver3) code reference: leemeng.tw/attack_on_bert_transfer_learning_in_nlp.html
