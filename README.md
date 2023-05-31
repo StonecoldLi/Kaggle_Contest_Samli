@@ -47,7 +47,8 @@
   - 5/20 Created the VotingRegressor with the extra data but care nothing on NaNs. Since that, we need Regressor Models which can handling the missing values by themselves to do the VotingRegressor. (More to see: https://www.kaggle.com/competitions/playground-series-s3e15/discussion/411353) 【RMSE: 0.075537】
   - 5/21 Use KNNImputer (default k_neighbors=20) as the imputation method for the combined_training_data. After check each regression method, found to combine 3 of the regression method ca reach the best score.(see details in the .ipynb file)【RMSE: 0.075316】
   - 5/21 Based on the above model (after established the VotingRegressor), tuning the k_neighbors in KNNImputer and get a better score. 【RMSE: 0.07526】
-
+  #### Private Ranking: 254/693
+  
 ### 07 Natural Language Processing with Disaster Tweets
   - 5/10 Use CountVectorizer & BernoulliBayes to get a point of 0.79436
   - 5/22 Use pretrained BERT (ver2:cased;ver3:uncased) to get 0.81979(highest one) and 0.81673 (for ver3) code reference: leemeng.tw/attack_on_bert_transfer_learning_in_nlp.html
