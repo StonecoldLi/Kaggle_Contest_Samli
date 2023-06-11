@@ -54,3 +54,7 @@
   - 5/22 Use pretrained BERT (ver2:cased;ver3:uncased) to get 0.81979(highest one) and 0.81673 (for ver3) code reference: leemeng.tw/attack_on_bert_transfer_learning_in_nlp.html
   - 5/23 Checking the transformer (BERT) "official" reference on huggingface (https://huggingface.co/docs/transformers/v4.29.1/en/model_doc/bert#transformers.BertForSequenceClassification) and get a score of 0.82623 (the training process is weird orz)
   - 5/26 Tried selecting keyword & text (2 columns) as the training_text file and used bert-base-uncased model to train 4 epochs and get 0.8345 accuracy, top 10%, amazing.
+
+### 08 Regression with a Crab Age Dataset
+  - 5/30 Create the baseline by using the Autogluon (public score: MAE 1.37379)
+  - 6/10 Using ensembled models (including: lgbm, catboost, histgradientboostingregressor) and tuning the parameters by using the optuna (an iterative parameter tuning tool). Also, using the synthetic data provided by https://www.kaggle.com/competitions/playground-series-s3e16/discussion/414003. (public score: 1.35854)
