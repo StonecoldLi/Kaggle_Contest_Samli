@@ -58,3 +58,8 @@
 ### 08 Regression with a Crab Age Dataset
   - 5/30 Create the baseline by using the Autogluon (public score: MAE 1.37379)
   - 6/10 Using ensembled models (including: lgbm, catboost, histgradientboostingregressor) and tuning the parameters by using the optuna (an iterative parameter tuning tool). Also, using the synthetic data provided by https://www.kaggle.com/competitions/playground-series-s3e16/discussion/414003. (public score: 1.35854)
+  #### Private Ranking: 489/1429
+  
+### 09 Binary Classification of Machine Failures
+  - 6/22 Catboost (Model ensembling seems not work well in this situation) with feature_engineering (Create new columns and create 2 PCA columns), roc_auc score : LB:0.96985 CV:0.97182 Private_LB:0.97589
+  #### Private Ranking: 398/1502
